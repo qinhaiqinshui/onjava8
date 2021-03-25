@@ -1,3 +1,5 @@
+package main;
+
 import java.util.function.Supplier;
 import java.util.stream.*;
 

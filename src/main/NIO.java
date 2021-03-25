@@ -1,3 +1,5 @@
+package main;
+
 import java.nio.file.Path;
 
 public class NIO {

@@ -1,4 +1,9 @@
+package main;
+
 import java.util.stream.Stream;
+
+import org.junit.Test;
+
 
 public enum DemoEnum {
     //括号中的“红色”赋值给value
@@ -20,10 +25,13 @@ public enum DemoEnum {
     }
 
     // 自定义方法
+    @Test
     public void draw() {
+        
         System.out.println("绘制 " + value);
     }
     public static void main(String[] args) {
+        System.out.println(DemoEnum.class.getPackageName());
         Stream.of(DemoEnum.values()).forEach(
             e->{
                 System.out.println("name: "+e.name());
